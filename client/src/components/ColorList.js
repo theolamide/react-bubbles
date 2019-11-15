@@ -23,7 +23,8 @@ const ColorList = ({ colors, updateColors }) => {
     .put(`/colors/${colorToEdit.id}`, colorToEdit)
     .then(() =>{      
       // alert('Kudos!')
-      window.location = '/BubblePage'
+      // window.location = '/BubblePage'
+      setEditing(false);
     })
   };
 
